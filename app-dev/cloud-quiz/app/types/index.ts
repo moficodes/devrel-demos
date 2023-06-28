@@ -25,6 +25,12 @@ export const gameStates = {
   GAME_OVER: 'GAME_OVER',
 } as const;
 
+export const timerStates = {
+  SHOWING_QUESTION: 4,
+  SHOWING_ANSWER: 5,
+  SHOWING_CTAS: 6,
+} as const;
+
 export type Player = {
   uid: string;
   displayName: string;

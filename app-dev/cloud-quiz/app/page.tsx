@@ -48,7 +48,6 @@ export default function Home() {
             {gameStates.GAME_OVER}
           </div>}
           {(!gameRef || game.state === gameStates.GAME_OVER) && <div>
-            <CreateGameButton setGameRef={setGameRef} />
             <GameList setGameRef={setGameRef} />
           </div>}
           {showingQuestion && gameRef && (<>
